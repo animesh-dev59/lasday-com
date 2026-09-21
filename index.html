@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senior Full Stack & AI Engineer Portfolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Raw CSS for Animations & Glassmorphism -->
+  <style>
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glow-effect:hover {
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50 glass-card border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold tracking-tight text-white">
+        Developer<span class="text-sky-400">.ai</span>
+      </a>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+      </nav>
+      <a href="#contact" class="px-5 py-2.5 rounded-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm transition-all shadow-lg shadow-sky-500/20">
+        Get In Touch
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="pt-36 pb-20 px-6 max-w-7xl mx-auto flex flex-col justify-center min-h-screen">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-sky-500/30 text-sky-400 text-xs font-semibold w-fit mb-6">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+      AI-Powered Senior Full Stack Engineer
+    </div>
+    
+    <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6">
+      Building Scalable Web Solutions & <br class="hidden md:block">
+      <span class="gradient-text">AI-Integrated Applications</span>
+    </h1>
+    
+    <p class="text-slate-400 text-lg md:text-xl max-w-3xl mb-10 leading-relaxed">
+      Senior Full Stack Developer specializing in JavaScript ecosystem (React, Next.js, Node.js), high-performance databases, Dockerized microservices, and AI-driven workflows.
+    </p>
+
+    <div class="flex flex-wrap gap-4">
+      <a href="#projects" class="px-8 py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold transition-all shadow-lg shadow-sky-500/25">
+        Explore Portfolio
+      </a>
+      <a href="https://github.com" target="_blank" class="px-8 py-3.5 rounded-xl glass-card hover:bg-slate-800 text-white font-semibold transition-all border border-slate-700">
+        <i class="fa-brands fa-github mr-2"></i> GitHub Profile
+      </a>
+    </div>
+
+    <!-- Impact Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-10 border-t border-slate-800">
+      <div>
+        <h3 class="text-3xl font-bold text-white">5+ Years</h3>
+        <p class="text-slate-400 text-sm mt-1">Full Stack Development</p>
+      </div>
+      <div>
+        <h3 class="text-3xl font-bold text-white">50+ Apps</h3>
+        <p class="text-slate-400 text-sm mt-1">Production Deployed</p>
+      </div>
+      <div>
+        <h3 class="text-3xl font-bold text-white">Dockerized</h3>
+        <p class="text-slate-400 text-sm mt-1">Scalable Architecture</p>
+      </div>
+      <div>
+        <h3 class="text-3xl font-bold text-white">AI First</h3>
+        <p class="text-slate-400 text-sm mt-1">Smart Code Workflows</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Technical Expertise</h2>
+      <p class="text-slate-400">Core technologies and frameworks I work with daily.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Skill Cards -->
+      <div class="glass-card p-6 rounded-2xl glow-effect transition-all">
+        <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-4"></i>
+        <h3 class="text-lg font-semibold mb-1">HTML5 & CSS3</h3>
+        <p class="text-slate-400 text-sm">Semantic UI & Modern Styling</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl glow-effect transition-all">
+        <i class="fa-brands fa-css3-alt text-4xl text-sky-400 mb-4"></i>
+        <h3 class="text-lg font-semibold mb-1">Tailwind CSS</h3>
+        <p class="text-slate-400 text-sm">Utility-First Responsive UI</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl glow-effect transition-all">
+        <i class="fa-brands fa-js text-4xl text-yellow-400 mb-4"></i>
+        <h3 class="text-lg font-semibold mb-1">JavaScript (Vanilla)</h3>
+        <p class="text-slate-400 text-sm">ES6+, DOM & Async Logic</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl glow-effect transition-all">
+        <i class="fa-brands fa-react text-4xl text-sky-400 mb-4"></i>
+        <h3 class="text-lg font-semibold mb-1">React & Next.js</h3>
+        <p class="text-slate-400 text-sm">SSR, SSG & Modern Web Apps</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl glow-effect transition-all">
+        <i class="fa-brands fa-node-js text-4xl text-emerald-500 mb-4"></i>
+        <h3 class="text-lg font-semibold mb-1">Node.js & Express</h3>
+        <p class="text-slate-400 text-sm">REST & GraphQL APIs</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl glow-effect transition-all">
+        <i class="fa-solid fa-database text-4xl text-emerald-400 mb-4"></i>
+        <h3 class="text-lg font-semibold mb-1">MongoDB</h3>
+        <p class="text-slate-400 text-sm">NoSQL & Schema Design</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl glow-effect transition-all">
+        <i class="fa-brands fa-docker text-4xl text-blue-500 mb-4"></i>
+        <h3 class="text-lg font-semibold mb-1">Docker</h3>
+        <p class="text-slate-400 text-sm">Containerization & DevOps</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl glow-effect transition-all">
+        <i class="fa-solid fa-robot text-4xl text-purple-400 mb-4"></i>
+        <h3 class="text-lg font-semibold mb-1">AI-Powered Dev</h3>
+        <p class="text-slate-400 text-sm">LLM Prompting & Integration</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Featured Applications</h2>
+      <p class="text-slate-400">Architected for scalability, speed, and responsiveness.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Project 1 -->
+      <div class="glass-card rounded-2xl overflow-hidden group">
+        <div class="p-8">
+          <span class="text-xs font-bold text-sky-400 uppercase tracking-widest">SaaS Platform</span>
+          <h3 class="text-2xl font-bold mt-2 mb-3 group-hover:text-sky-400 transition-colors">AI-Powered Analytics Engine</h3>
+          <p class="text-slate-400 text-sm mb-6">Built using Next.js, Node.js, and MongoDB. Fully dockerized for cloud deployment with fast data fetching.</p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md">Next.js</span>
+            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md">Node.js</span>
+            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md">MongoDB</span>
+            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md">Docker</span>
+          </div>
+          <a href="#" class="text-sky-400 font-semibold text-sm hover:underline inline-flex items-center gap-1">View Project Architecture <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="glass-card rounded-2xl overflow-hidden group">
+        <div class="p-8">
+          <span class="text-xs font-bold text-purple-400 uppercase tracking-widest">E-Commerce</span>
+          <h3 class="text-2xl font-bold mt-2 mb-3 group-hover:text-purple-400 transition-colors">Scalable Microservices Store</h3>
+          <p class="text-slate-400 text-sm mb-6">Tailwind CSS frontend backed by React and Node.js microservices. Integrated secure payment gateways.</p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md">React</span>
+            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md">Tailwind</span>
+            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md">Express</span>
+            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md">Docker</span>
+          </div>
+          <a href="#" class="text-purple-400 font-semibold text-sm hover:underline inline-flex items-center gap-1">View Live Demo <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Footer -->
+  <footer id="contact" class="border-t border-slate-800 pt-16 pb-12 glass-card">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Let's Build Something Scalable Together</h2>
+      <p class="text-slate-400 max-w-xl mx-auto mb-8">Available for senior developer roles, architecture consulting, and high-impact web development projects.</p>
+      <a href="mailto:contact@example.com" class="px-8 py-3.5 rounded-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold inline-block transition-all shadow-lg shadow-sky-500/20">
+        Send an Email
+      </a>
+      <p class="text-slate-600 text-xs mt-12">© 2026 Senior Full Stack Web Developer Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
